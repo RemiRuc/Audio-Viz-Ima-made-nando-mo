@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    cursor: none;
+    font-family: 'M PLUS 1p', sans-serif;
+    background-color: #eae9da;
+}
+
+#cache{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+}
+
+#intro{
+    display: none;
+}
+
+.title{
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+}
+.headphones{
+    font-size: 4em;
+    transform: translateY(18px);
+}
+
+.info{
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    left: 0;
+    right: 0;
+    font-size: 1.5em;
+}
+
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 2em;
+    transform: translateY(-30px);
+    font-weight: 500;
+}
+
+h1, h2, h3, p{
+    margin: 0;
+}
+
+h3{
+    margin-bottom: 30px;
+}
+
+#info{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    transform: translateY(-35px);
+    transition: all 0.5s;
+}
+#info.display{
+    transform: translateY(25px);
+}
+
+#outro{
+    color: white;
+    opacity: 0;
+    transform: translateY(100vh);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    cursor: default;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+.lyrics{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+
+.lyrics section{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 4em;
+}
+
+.lyrics>section>span{
+    position: relative;
+}
+.lyrics>section>span>span{
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    font-size: 0.4em;
+}
+.lyrics>section>span>span.threeKana{
+    font-size: 0.3em;
+    top: -15px;
+}
+
+.lyrics>section>span>span.threeKana{
+    font-size: 0.25em;
+    top: -10px;
+}
+
